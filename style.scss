@@ -1,0 +1,161 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stilizare generală */
+  body {
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+
+    min-height: 100vh;
+  }
+  
+  header {
+    //display: none;
+   // background-color: #f2f2f2;
+    //text-align: center;
+    //padding: 20px;
+    display: flex;
+    justify-content: start;
+
+    margin-bottom: 5vh;
+
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    //margin-bottom: 20px;
+    margin-bottom: 5vh;
+
+  }
+
+  //Logo
+
+  .logo{
+
+    height: 100px;
+
+  }
+  
+  .hero {
+    position: relative;
+
+    height: 100%;
+    background-image: url("./Poze/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 60px;
+    padding: 40px;
+
+    grid-row: 1/10;
+
+    #overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      height: 100%;
+      width: 100%;
+
+      background: linear-gradient(to bottom, rgb(32, 30, 43), transparent);
+
+    }
+
+    .hero-content{
+      position: relative;
+
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+
+    }
+
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    //margin-bottom: 20px;
+    margin-bottom: 5vh;
+
+  }
+  
+  .hero p {
+    font-size: 18px;
+    //margin-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    max-width: 64ch;
+
+
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    //background-color: #333;
+    background-color:  rgb(32, 30, 43);
+    color: rgb(201, 201, 201);
+    text-align: center;
+
+    p {
+      font-size: 11px;
+    }
+
+  }
+  
+  /* Stilizare pentru dispozitive mobile */
+  @media (max-width: 768px) {
+    
+    .hero{
+       padding: 24px;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+  
+    .hero h2, h1 {
+      font-size: 28px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+
+    header{
+
+     justify-content: center;
+    }
+
+    .logo{
+
+      height: 80px;
+  
+    }
+
+  }
+  
+
+
